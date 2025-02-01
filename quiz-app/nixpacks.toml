@@ -1,3 +1,10 @@
+
 [build]
-# Specify the subdirectory to build. Change "backend" to "frontend" if needed.
+# Tell Nixpacks to use the backend folder for the build
 dir = "backend"
+# Optionally, explicitly set the builder to Node
+builder = "node"
+# Define a custom build command if needed.
+# This command will run after the builder installs dependencies.
+# Here, we install dependencies and then start the app.
+command = "npm install && npm start"
