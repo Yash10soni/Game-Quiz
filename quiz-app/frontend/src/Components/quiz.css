@@ -1,0 +1,168 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Quiz Container */
+.quiz-container {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Quiz Title */
+.quiz-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Question Styles */
+.question {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Answer Buttons */
+.answers button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.answers button:hover {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  transform: scale(1.05);
+}
+
+.answers button:active {
+  background: #ff4a7b;
+}
+
+/* Completed Quiz Section */
+.quiz-completed {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.quiz-completed h2 {
+  font-size: 2rem;
+  color: #ffeb3b;
+}
+
+.quiz-completed p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* Badge Styles */
+.badge {
+  font-size: 1.2rem;
+  color: #ffeb3b;
+  margin-top: 20px;
+}
+
+/* Achievements */
+.achievements {
+  margin-top: 20px;
+}
+
+.achievements ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.achievements li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+/* Leaderboard */
+.leaderboard {
+  margin-top: 30px;
+}
+
+.leaderboard h3 {
+  font-size: 1.5rem;
+  color: #ffeb3b;
+}
+
+.leaderboard ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.leaderboard li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Button Styles */
+button {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  transform: scale(1.05);
+}
+
+button:active {
+  background: #ff4a7b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quiz-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .answers button {
+    font-size: 0.9rem;
+  }
+}
