@@ -1,0 +1,3 @@
+[build]
+# Specify the subdirectory to build. Change "backend" to "frontend" if needed.
+dir = "backend"
