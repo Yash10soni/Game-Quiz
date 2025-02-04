@@ -1,0 +1,25 @@
+.Navbar {
+    background-color: rgb(254, 254, 253);
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+    height: 80px; /* Fixed height */
+    position: fixed; /* Sticks the navbar to the top */
+    top: 0; /* Ensures it's at the very top */
+    left: 0;
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better look */
+    z-index: 1000; /* Keeps navbar above other content */
+}
+
+.Navbar h1 {
+    background-color: rgb(14, 92, 161);
+    color: white    ;
+    margin: 0; /* Removes default margin */
+    padding: 0 20px; /* Adds horizontal padding */
+    font-size: 24px; /* Adjusts font size */
+    display: flex;
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    height: 100%; /* Fills the navbar height */
+}

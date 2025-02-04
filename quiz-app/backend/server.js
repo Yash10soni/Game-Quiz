@@ -40,6 +40,9 @@ pool.query(createTableQuery, (err, res) => {
 
 // Fetch Quiz Data from API
 const QUIZ_API_URL = "https://api.jsonserve.com/Uw5CrX";
+app.get("/", (req, res) => {
+  res.redirect("http://localhost:3000");
+});
 
 app.get("/api/quiz", async (req, res) => {
   try {
@@ -71,10 +74,11 @@ app.get("/api/leaderboard", async (req, res) => {
   try {
     const result = await pool.query("SELECT * FROM results ORDER BY score DESC LIMIT 10");
     res.json(result.rows);
+    console.log(result.rows);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch leaderboard" });
   }
-});
+});  
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
