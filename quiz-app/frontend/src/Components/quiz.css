@@ -19,7 +19,7 @@
   color: #333;
 }
 
-/* Container for the answer options */
+/* Container for the answeroptions */
 .options {
   display: flex;
   flex-direction: column;

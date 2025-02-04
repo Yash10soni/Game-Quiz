@@ -53,7 +53,7 @@ app.get("/api/quiz", async (req, res) => {
   }
 });
 
-// Store Quiz Results
+// Store Quiz Rsults
 app.post("/api/results", async (req, res) => {
   const { username, score } = req.body;
   try {

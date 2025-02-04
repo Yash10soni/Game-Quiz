@@ -72,7 +72,7 @@ const Quiz = () => {
     if (score === quizData.questions.length) achieved.push("Perfect Score! 🎉");
     // Check if the score is 8 or more
     if (score >= 8) achieved.push("Mastermind! 🧠");
-    // Check if the user answered at least one question correctly
+    // Check if the user answere at least one question correctly
     if (score > 3) achieved.push("Quiz best performace ! 🏆");
     console.log("Achievements:", achieved);
     return achieved;
